@@ -1,0 +1,53 @@
+\documentclass[kul]{kulakarticle} % options: kulak (default) or kul
+
+\usepackage[english]{babel}
+\usepackage{subfiles}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{float}
+\hypersetup{
+	linktoc=all,     %set to all if you want both sections and subsections linked
+}
+\hypersetup{
+	pdftitle={Philosophy},
+	pdfsubject={Philosophy},
+	pdfauthor={Kobe Michiels},
+	colorlinks = true, %Colours links instead of ugly boxes
+	linkcolor= black,
+	urlcolor=cyan
+}
+\setcounter{secnumdepth}{4}
+
+\title{Philosophy}
+\author{Kobe Michiels}
+\date{Academic Year 2023 -- 2024}
+\address{
+	\textbf{Campus Group T} \\
+	Bachelor of Engineering Technology \\
+	Engineering and Sustainability: Philosophy and Global Challenges}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section*{Summary}
+	
+	This is a summary of the Philosophy part of the \href{https://onderwijsaanbod.kuleuven.be/syllabi/v/e/T3AID1E.htm#activetab=inhoud_idp1690064}{Engineering and Sustainability: Philosophy and Global Challenges} course of the Bachelor of Engineering Technology at KU Leuven.
+
+	\setcounter{tocdepth}{2}
+	\tableofcontents
+	
+	\newpage
+	\subfile{chapters/philosophy-of-science}
+	\newpage
+	\subfile{chapters/nature-as-a-resource}
+	\newpage
+	\subfile{chapters/enhacement}
+	\newpage
+	\subfile{chapters/energy-justice}
+	
+\end{document}
